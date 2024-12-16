@@ -1,4 +1,4 @@
-import { Activity, Globe2, Cpu, Users } from "lucide-react";
+import { GraduationCap, Users, BookOpen, Globe2 } from "lucide-react";
 
 export const ServerStats = () => {
   return (
@@ -6,28 +6,28 @@ export const ServerStats = () => {
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
         {[
           {
-            icon: Globe2,
-            stat: "99.9%",
-            label: "Uptime Guarantee",
-            description: "Enterprise-grade reliability",
-          },
-          {
-            icon: Activity,
-            stat: "<20ms",
-            label: "Average Latency",
-            description: "Lightning-fast response times",
-          },
-          {
-            icon: Cpu,
-            stat: "12TB",
-            label: "Network Capacity",
-            description: "High-performance infrastructure",
-          },
-          {
             icon: Users,
             stat: "50K+",
-            label: "Active Players",
-            description: "Growing gaming community",
+            label: "Active Students",
+            description: "Growing learning community",
+          },
+          {
+            icon: GraduationCap,
+            stat: "95%",
+            label: "Pass Rate",
+            description: "Student success rate",
+          },
+          {
+            icon: BookOpen,
+            stat: "500+",
+            label: "Courses",
+            description: "Comprehensive curriculum",
+          },
+          {
+            icon: Globe2,
+            stat: "24/7",
+            label: "Accessibility",
+            description: "Learn anytime, anywhere",
           },
         ].map((item) => (
           <div
