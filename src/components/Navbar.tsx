@@ -54,28 +54,20 @@ export const Navbar = () => {
           )}
         </div>
 
-        {isMobile && (
-          <div
-            className={`transform transition-all duration-300 ease-in-out ${
-              isMenuOpen
-                ? "opacity-100 translate-y-0"
-                : "opacity-0 -translate-y-4 pointer-events-none"
-            }`}
-          >
-            <div className="py-4 border-t border-windhaven-primary/10">
-              {navItems.map((item) => (
-                <a
-                  key={item.label}
-                  href={item.href}
-                  className="block py-3 text-gray-300 hover:text-white transition-colors text-sm font-medium"
-                >
-                  {item.label}
-                </a>
-              ))}
-              <Button className="w-full mt-4 bg-windhaven-primary hover:bg-windhaven-primary/90 text-white">
-                Get Started
-              </Button>
-            </div>
+        {isMobile && isMenuOpen && (
+          <div className="py-4 border-t border-windhaven-primary/10">
+            {navItems.map((item) => (
+              <a
+                key={item.label}
+                href={item.href}
+                className="block py-3 text-gray-300 hover:text-white transition-colors text-sm font-medium"
+              >
+                {item.label}
+              </a>
+            ))}
+            <Button className="w-full mt-4 bg-windhaven-primary hover:bg-windhaven-primary/90 text-white">
+              Get Started
+            </Button>
           </div>
         )}
       </div>
