@@ -15,12 +15,12 @@ export const Navbar = () => {
   ];
 
   return (
-    <nav className="fixed top-0 left-0 right-0 z-50 bg-windhaven-dark/80 backdrop-blur-lg border-b border-windhaven-primary/20">
+    <nav className="fixed top-0 left-0 right-0 z-50 bg-windhaven-dark/80 backdrop-blur-xl border-b border-windhaven-primary/10">
       <div className="container mx-auto px-4">
-        <div className="flex items-center justify-between h-16">
+        <div className="flex items-center justify-between h-20">
           <div className="flex items-center">
-            <a href="/" className="text-2xl font-bold text-white">
-              Wind<span className="text-windhaven-primary">Haven</span>
+            <a href="/" className="text-2xl font-bold text-white tracking-tight">
+              Wind<span className="bg-gradient-to-r from-windhaven-primary to-windhaven-secondary bg-clip-text text-transparent">Haven</span>
             </a>
           </div>
 
@@ -30,8 +30,9 @@ export const Navbar = () => {
                 variant="ghost"
                 size="icon"
                 onClick={() => setIsMenuOpen(!isMenuOpen)}
+                className="text-gray-300 hover:text-white"
               >
-                <Menu className="h-6 w-6 text-white" />
+                <Menu className="h-6 w-6" />
               </Button>
             </div>
           ) : (
@@ -40,33 +41,41 @@ export const Navbar = () => {
                 <a
                   key={item.label}
                   href={item.href}
-                  className="text-gray-300 hover:text-white transition-colors"
+                  className="text-gray-300 hover:text-white transition-colors text-sm font-medium"
                 >
                   {item.label}
                 </a>
               ))}
-              <Button className="bg-windhaven-primary hover:bg-windhaven-primary/90 text-white">
+              <Button size="sm" className="bg-windhaven-primary hover:bg-windhaven-primary/90 text-white">
                 Get Started
               </Button>
             </div>
           )}
         </div>
 
-        {/* Mobile Menu */}
-        {isMobile && isMenuOpen && (
-          <div className="py-4 border-t border-windhaven-primary/20">
-            {navItems.map((item) => (
-              <a
-                key={item.label}
-                href={item.href}
-                className="block py-2 text-gray-300 hover:text-white transition-colors"
-              >
-                {item.label}
-              </a>
-            ))}
-            <Button className="w-full mt-4 bg-windhaven-primary hover:bg-windhaven-primary/90 text-white">
-              Get Started
-            </Button>
+        {/* Mobile Menu with improved animation */}
+        {isMobile && (
+          <div
+            className={`transform transition-all duration-300 ease-in-out ${
+              isMenuOpen
+                ? "opacity-100 translate-y-0"
+                : "opacity-0 -translate-y-4 pointer-events-none"
+            }`}
+          >
+            <div className="py-4 border-t border-windhaven-primary/10">
+              {navItems.map((item) => (
+                <a
+                  key={item.label}
+                  href={item.href}
+                  className="block py-3 text-gray-300 hover:text-white transition-colors text-sm font-medium"
+                >
+                  {item.label}
+                </a>
+              ))}
+              <Button className="w-full mt-4 bg-windhaven-primary hover:bg-windhaven-primary/90 text-white">
+                Get Started
+              </Button>
+            </div>
           </div>
         )}
       </div>
