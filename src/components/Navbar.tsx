@@ -54,7 +54,11 @@ export const Navbar = () => {
           )}
         </div>
 
-        {isMobile && isMenuOpen && (
+        <div
+          className={`transform transition-all duration-300 ease-in-out overflow-hidden ${
+            isMenuOpen ? "max-h-[400px] opacity-100" : "max-h-0 opacity-0"
+          }`}
+        >
           <div className="py-4 border-t border-windhaven-primary/10">
             {navItems.map((item) => (
               <a
@@ -69,7 +73,7 @@ export const Navbar = () => {
               Get Started
             </Button>
           </div>
-        )}
+        </div>
       </div>
     </nav>
   );
