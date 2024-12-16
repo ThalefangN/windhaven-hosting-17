@@ -8,9 +8,9 @@ export const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const navItems = [
-    { label: "Features", href: "/features" },
+    { label: "Courses", href: "/features" },
     { label: "Pricing", href: "/pricing" },
-    { label: "Documentation", href: "/documentation" },
+    { label: "Resources", href: "/documentation" },
     { label: "About", href: "/about" },
     { label: "Contact", href: "/contact" },
   ];
@@ -21,7 +21,7 @@ export const Navbar = () => {
         <div className="flex items-center justify-between h-20">
           <div className="flex items-center">
             <a href="/" className="text-2xl font-bold text-white tracking-tight">
-              Wind<span className="bg-gradient-to-r from-windhaven-primary to-windhaven-secondary bg-clip-text text-transparent">Haven</span>
+              Botsedu<span className="bg-gradient-to-r from-windhaven-primary to-windhaven-secondary bg-clip-text text-transparent">Learn</span>
             </a>
           </div>
 
@@ -48,7 +48,7 @@ export const Navbar = () => {
                 </a>
               ))}
               <Button size="sm" className="bg-windhaven-primary hover:bg-windhaven-primary/90 text-white">
-                Get Started
+                Start Learning
               </Button>
             </div>
           )}
@@ -70,7 +70,7 @@ export const Navbar = () => {
               </a>
             ))}
             <Button className="w-full mt-4 bg-windhaven-primary hover:bg-windhaven-primary/90 text-white">
-              Get Started
+              Start Learning
             </Button>
           </div>
         </div>

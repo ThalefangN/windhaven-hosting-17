@@ -8,20 +8,20 @@ import {
 export const FAQSection = () => {
   const faqs = [
     {
-      question: "How fast can I get my server running?",
-      answer: "Your server can be up and running in less than 60 seconds after purchase. Our automated deployment system ensures quick and hassle-free setup.",
+      question: "How do I get started with Botsedu Learn?",
+      answer: "Simply create an account, browse our course catalog, and enroll in any course that interests you. You can start learning immediately after enrollment.",
     },
     {
-      question: "What kind of support do you offer?",
-      answer: "We provide 24/7 technical support through Discord and email. Our team of experienced gaming enthusiasts is always ready to help.",
+      question: "Are the certificates recognized?",
+      answer: "Yes, our certificates are industry-recognized and can be added to your professional portfolio and LinkedIn profile.",
     },
     {
-      question: "Do you offer DDoS protection?",
-      answer: "Yes, all our servers come with enterprise-grade DDoS protection at no additional cost to ensure your games run smoothly.",
+      question: "Can I learn at my own pace?",
+      answer: "Absolutely! Most of our courses are self-paced, allowing you to learn according to your schedule and comfort level.",
     },
     {
-      question: "Can I modify server settings?",
-      answer: "Absolutely! You have full control over your server settings through our intuitive control panel.",
+      question: "What support options are available?",
+      answer: "We offer 24/7 technical support, instructor assistance, and a community forum where you can interact with other learners.",
     },
   ];
 

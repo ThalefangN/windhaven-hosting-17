@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import { Server, Shield, Zap, Globe, Users, Cpu } from "lucide-react";
+import { BookOpen, GraduationCap, Users, Video, Headphones, School } from "lucide-react";
 
 export const Hero = () => {
   return (
@@ -16,68 +16,67 @@ export const Hero = () => {
       <div className="container mx-auto px-4 pt-20 relative z-10">
         <div className="text-center max-w-5xl mx-auto">
           <div className="inline-block mb-4 px-4 py-1.5 rounded-full border border-windhaven-primary/30 bg-windhaven-primary/10 text-windhaven-primary text-sm font-medium">
-            Now with global server locations 🌍
+            Start learning today! 📚
           </div>
           <h1 className="text-4xl md:text-7xl font-bold text-white mb-6 tracking-tight">
-            Fast. Reliable.{" "}
+            Your Gateway to{" "}
             <span className="bg-gradient-to-r from-windhaven-primary to-windhaven-secondary bg-clip-text text-transparent animate-glow">
-              Game Hosting
+              Digital Learning
             </span>
           </h1>
           <p className="text-xl text-gray-400 mb-8 max-w-2xl mx-auto leading-relaxed">
-            Experience lightning-fast game servers with enterprise-grade
-            infrastructure. Built for gamers, by gamers.
+            Transform your future with our comprehensive online learning platform. Expert-led courses, interactive content, and a supportive community.
           </p>
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-16">
             <Button size="lg" className="bg-windhaven-primary hover:bg-windhaven-primary/90 text-white min-w-[200px] h-12 text-base">
-              Get Started
+              Start Learning
             </Button>
             <Button
               size="lg"
               variant="outline"
               className="border-windhaven-primary text-windhaven-primary hover:bg-windhaven-primary/10 min-w-[200px] h-12 text-base"
             >
-              View Plans
+              Browse Courses
             </Button>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-20">
             {[
               {
-                icon: Globe,
-                title: "Global Network",
+                icon: BookOpen,
+                title: "Rich Content",
                 description:
-                  "Servers in multiple locations for the lowest possible latency",
+                  "Access a vast library of courses across multiple disciplines",
               },
               {
-                icon: Shield,
-                title: "DDoS Protection",
+                icon: GraduationCap,
+                title: "Expert Instructors",
                 description:
-                  "Enterprise-grade protection against attacks, included free",
+                  "Learn from industry professionals and experienced educators",
               },
               {
                 icon: Users,
+                title: "Community Learning",
+                description:
+                  "Connect with peers and engage in collaborative learning",
+              },
+              {
+                icon: Video,
+                title: "Interactive Sessions",
+                description:
+                  "Participate in live classes and interactive workshops",
+              },
+              {
+                icon: Headphones,
                 title: "24/7 Support",
                 description:
-                  "Our expert team is available around the clock to help you",
+                  "Get help whenever you need it from our dedicated support team",
               },
               {
-                icon: Zap,
-                title: "Instant Setup",
+                icon: School,
+                title: "Certifications",
                 description:
-                  "Get your server up and running in less than 55 seconds",
-              },
-              {
-                icon: Cpu,
-                title: "High Performance",
-                description:
-                  "Powered by latest gen processors and NVMe storage",
-              },
-              {
-                icon: Server,
-                title: "Full Control",
-                description:
-                  "Complete access to configure and customize your server",
+                  "Earn recognized certificates upon course completion",
               },
             ].map((feature) => (
               <div
