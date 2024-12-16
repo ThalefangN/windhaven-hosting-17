@@ -16,16 +16,16 @@ export const Hero = () => {
       <div className="container mx-auto px-4 pt-20 relative z-10">
         <div className="text-center max-w-5xl mx-auto">
           <div className="inline-block mb-4 px-4 py-1.5 rounded-full border border-windhaven-primary/30 bg-windhaven-primary/10 text-windhaven-primary text-sm font-medium">
-            Start learning today! 📚
+            Empowering Botswana Through Education 🇧🇼
           </div>
           <h1 className="text-4xl md:text-7xl font-bold text-white mb-6 tracking-tight">
             Your Gateway to{" "}
             <span className="bg-gradient-to-r from-windhaven-primary to-windhaven-secondary bg-clip-text text-transparent animate-glow">
-              Digital Learning
+              Digital Learning in Botswana
             </span>
           </h1>
           <p className="text-xl text-gray-400 mb-8 max-w-2xl mx-auto leading-relaxed">
-            Transform your future with our comprehensive online learning platform. Expert-led courses, interactive content, and a supportive community.
+            Access quality education from anywhere in Botswana. Study BGCSE, PSLE, and professional courses with expert local instructors and a supportive community.
           </p>
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-16">
             <Button size="lg" className="bg-windhaven-primary hover:bg-windhaven-primary/90 text-white min-w-[200px] h-12 text-base">
@@ -44,39 +44,39 @@ export const Hero = () => {
             {[
               {
                 icon: BookOpen,
-                title: "Rich Content",
+                title: "Local Curriculum",
                 description:
-                  "Access a vast library of courses across multiple disciplines",
+                  "Aligned with Botswana's education system - BGCSE, PSLE, and more",
               },
               {
                 icon: GraduationCap,
-                title: "Expert Instructors",
+                title: "Botswana Educators",
                 description:
-                  "Learn from industry professionals and experienced educators",
+                  "Learn from qualified local teachers and industry experts",
               },
               {
                 icon: Users,
-                title: "Community Learning",
+                title: "Community Support",
                 description:
-                  "Connect with peers and engage in collaborative learning",
+                  "Connect with fellow students across Botswana",
               },
               {
                 icon: Video,
-                title: "Interactive Sessions",
+                title: "Online Classes",
                 description:
-                  "Participate in live classes and interactive workshops",
+                  "Live and recorded sessions in English and Setswana",
               },
               {
                 icon: Headphones,
-                title: "24/7 Support",
+                title: "Local Support",
                 description:
-                  "Get help whenever you need it from our dedicated support team",
+                  "Get help in your preferred language, any time",
               },
               {
                 icon: School,
-                title: "Certifications",
+                title: "Recognized Certificates",
                 description:
-                  "Earn recognized certificates upon course completion",
+                  "Earn certificates approved by BQA",
               },
             ].map((feature) => (
               <div

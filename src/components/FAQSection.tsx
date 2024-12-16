@@ -9,19 +9,19 @@ export const FAQSection = () => {
   const faqs = [
     {
       question: "How do I get started with Botsedu Learn?",
-      answer: "Simply create an account, browse our course catalog, and enroll in any course that interests you. You can start learning immediately after enrollment.",
+      answer: "Simply create an account, browse our course catalog, and enroll in any course that interests you. We offer courses for BGCSE, PSLE, and professional development.",
     },
     {
-      question: "Are the certificates recognized?",
-      answer: "Yes, our certificates are industry-recognized and can be added to your professional portfolio and LinkedIn profile.",
+      question: "Are the certificates recognized in Botswana?",
+      answer: "Yes, our certificates are recognized by the Botswana Qualifications Authority (BQA) and can be used for employment and further education in Botswana.",
     },
     {
-      question: "Can I learn at my own pace?",
-      answer: "Absolutely! Most of our courses are self-paced, allowing you to learn according to your schedule and comfort level.",
+      question: "Can I learn in my preferred language?",
+      answer: "Yes! Our courses are available in both English and Setswana, allowing you to learn in the language you're most comfortable with.",
     },
     {
       question: "What support options are available?",
-      answer: "We offer 24/7 technical support, instructor assistance, and a community forum where you can interact with other learners.",
+      answer: "We offer 24/7 technical support, local instructor assistance, and a community forum where you can interact with other learners from across Botswana.",
     },
   ];
 
