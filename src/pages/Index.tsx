@@ -1,6 +1,10 @@
 import { Navbar } from "@/components/Navbar";
 import { Hero } from "@/components/Hero";
 import { ServerStats } from "@/components/ServerStats";
+import { AboutSection } from "@/components/AboutSection";
+import { FAQSection } from "@/components/FAQSection";
+import { ContactSection } from "@/components/ContactSection";
+import { Footer } from "@/components/Footer";
 import BackgroundEffects from "@/components/BackgroundEffects";
 import { useEffect, useState } from "react";
 
@@ -29,6 +33,10 @@ const Index = () => {
       <Navbar />
       <Hero />
       <ServerStats />
+      <AboutSection />
+      <FAQSection />
+      <ContactSection />
+      <Footer />
     </div>
   );
 };

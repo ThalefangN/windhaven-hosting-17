@@ -8,10 +8,11 @@ export const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const navItems = [
-    { label: "Features", href: "#features" },
-    { label: "Pricing", href: "#pricing" },
-    { label: "Documentation", href: "#docs" },
-    { label: "About", href: "#about" },
+    { label: "Features", href: "/features" },
+    { label: "Pricing", href: "/pricing" },
+    { label: "Documentation", href: "/documentation" },
+    { label: "About", href: "/about" },
+    { label: "Contact", href: "/contact" },
   ];
 
   return (
@@ -53,7 +54,6 @@ export const Navbar = () => {
           )}
         </div>
 
-        {/* Mobile Menu with improved animation */}
         {isMobile && (
           <div
             className={`transform transition-all duration-300 ease-in-out ${
